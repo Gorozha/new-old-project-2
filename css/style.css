@@ -1,0 +1,110 @@
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* основной цвет шрифта #212121*/
+/* вторичный цвет шрифта #757575 */
+/* цвет шрифта на темном фоне  #FFFFFF */
+/* цвет шрифта на темном фоне с прозрачностью rgba(255, 255, 255, 0,6) */
+/* цвет шрифта при ховере #2196F3 */
+/* цвет затемнения футера #2F303A */
+/* цвет затемнения главной картинки и некоторых маленьких (#2F303A
+80 %) rgba(47, 48, 58, 0,8) */
+/* вторичный фон боди #F5F4FA */
+/* цвет задвигающегося окна (#2196F3
+90 %) rgba(33, 150, 243, 0,9) */
+:root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --link-color: #2196f3;
+  --body-color: #ffffff;
+  --secondary-body-color: #f5f4fa;
+  --blackout-color: #2f303a;
+  --color-icon: #afb1b8;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  background-color: var(--body-color);
+}
+/* logo */
+.logo-web {
+  color: var(--link-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.logo-studio {
+  color: var(--main-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+/* hero-title */
+.hero-title {
+  color: var(--main-color);
+}
+
+/* наши качества */
+.section-merit {
+  color: var(--secondary-color);
+}
+/* section-title */
+.section-title,
+.section-header {
+  color: var(--main-color);
+}
+
+/* site-nav a*/
+.site-nav a {
+  color: var(--main-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--link-color);
+}
+
+.site-nav .current {
+  color: var(--link-color);
+}
+
+/* auth-nav */
+.auth-nav a {
+  color: var(--secondary-color);
+}
+
+.auth-nav a:hover {
+  color: var(--link-color);
+}
+
+/* section-works */
+
+/* section-workers */
+
+/* section-clients */
+
+/* button */
+.button {
+  color: var(--body-color);
+  background-color: var(--link-color);
+}
+
+/* clients-list */
+.clients-list {
+  fill: var(--color-icon);
+}
+.clients-list:hover,
+.clients-list:focus {
+  fill: var(--link-color);
+}
