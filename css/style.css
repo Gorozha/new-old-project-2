@@ -21,53 +21,100 @@
   --color-icon: #afb1b8;
 }
 
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+/* h2 {
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-style: 36px;
+  line-height: 1.16;
+  letter-spacing: 3%;
+}
+
+h3 {
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 3%;
+}
+
+p {
+  color: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 3%;
+} */
+
 ul {
   list-style: none;
 }
 
+a,
+ins {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
 body {
-  font-family: Roboto;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   background-color: var(--body-color);
 }
-/* logo */
+
+/* page ===================== */
+.page {
+  width: 1600px;
+  margin: 0 auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+/* logo=================================== */
 .logo-web {
   color: var(--link-color);
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .logo-studio {
   color: var(--main-color);
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-/* hero-title */
-.hero-title {
-  color: var(--main-color);
-}
-
-/* наши качества */
-.section-merit {
-  color: var(--secondary-color);
-}
-/* section-title */
-.section-title,
-.section-header {
-  color: var(--main-color);
-}
-
-/* site-nav a*/
+/* site-nav a=============================*/
 .site-nav a {
   color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: inherit;
 }
 
 .site-nav a:hover,
@@ -79,32 +126,197 @@ body {
   color: var(--link-color);
 }
 
-/* auth-nav */
+/* auth-nav ==========================*/
 .auth-nav a {
   color: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: inherit;
 }
 
-.auth-nav a:hover {
+.auth-nav a:hover,
+.auth-nav a:focus {
   color: var(--link-color);
 }
 
-/* section-works */
+/* hero-title =========================*/
+.hero-title {
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: inherit;
+}
 
-/* section-workers */
+.hero-button {
+  color: var(--body-color);
+  background-color: var(--link-color);
+  cursor: pointer;
+}
 
-/* section-clients */
-
-/* button */
+/* button============================== */
 .button {
   color: var(--body-color);
   background-color: var(--link-color);
+  cursor: pointer;
 }
 
-/* clients-list */
-.clients-list {
-  fill: var(--color-icon);
+/* noname============================ */
+/* .noname {}  */
+/* .noname-menu{} */
+/* .noname-item{} */
+.noname-title {
+  color: var(--main-color);
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: inherit;
 }
-.clients-list:hover,
-.clients-list:focus {
-  fill: var(--link-color);
+/* .noname-merit{} */
+
+/* works========================== */
+/* .works{} */
+.works-title {
+  color: var(--main-color);
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: inherit;
+}
+/* .works-icons{} */
+/* .works-item{} */
+/* .works-rubric{} */
+
+/* team ========================*/
+.team {
+  background-color: var(--secondary-body-color);
+}
+.team-title {
+  color: var(--main-color);
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: inherit;
+}
+/* .team-workers{} */
+/* .team-item{} */
+.team-header {
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: inherit;
+}
+
+.team-rubric {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: inherit;
+}
+/* .team-social{} */
+
+/* clientage===================== */
+/* .clientage{} */
+.clientage-header {
+  color: var(--main-color);
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: inherit;
+}
+/* .clientage-list{} */
+/* .clientage-icon{} */
+/* .clients-list{}*/
+
+/* footer===================== */
+/* .footer{} */
+/* .footer-item {}*/
+/* .footer-address{} */
+/* .footer-social{} */
+/* .footer-list{} */
+.footer-street {
+  color: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: inherit;
+}
+.footer-mail a {
+  color: var(--secondary-color);
+  /* rgba(255, 255, 255, 0.6) */
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: inherit;
+}
+.footer-tel a {
+  color: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: inherit;
+}
+
+/* portfolio ==============================*/
+/* main */
+/* sentence */
+.main-sentence .button {
+  background-color: var(--body-color);
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+.main-sentence .button:hover,
+.main-sentence .button:focus {
+  background-color: var(--link-color);
+  color: var(--body-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+}
+/* .main-item{} */
+/* .main-menu{} */
+.main-heading {
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: inherit;
+  /*6%  */
+}
+
+.main-rubric {
+  color: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: inherit;
+}
+
+/* footer */
+.footer-button {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  padding: 10px 62px 10px 29px;
+  border-radius: 3px;
+  color: var(--body-color);
+  background-color: var(--link-color);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.87;
+
+  vertical-align: center;
+  letter-spacing: inherit;
+}
+
+.button-icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  padding: 0px;
+  background-color: yellow;
+  vertical-align: middle;
 }
