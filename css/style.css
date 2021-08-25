@@ -153,20 +153,55 @@ body {
   color: var(--link-color);
 }
 
+.site-nav {
+  display: flex;
+  margin-left: 50px;
+  /* задаем левый маржин первой ссылке */
+}
+
+.site-nav :not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  /* задаем флекс мейлу и телефону */
+  margin-left: auto;
+  /* задаем автомат. левый маржин мейлу  */
+}
+
+.auth-nav li + li {
+  margin-left: 50px;
+  /* даем маржин влево всем ЛИ кроме первого */
+}
+
+.page-nav {
+  display: flex;
+  /* задаем флекс всему хедеру */
+  align-items: center;
+  /* выравниваем все элем. по центру */
+  justify-content: space-between;
+  /* позиционирование по горизонтали */
+}
 /* для дивов в секциях */
 .container {
+  background-color: aqua;
   outline: 1px solid black;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   /* margin: 0 auto; */
-  width: 1170px;
+  width: 1200px;
 }
 
 /* hero =========================*/
 .hero {
   outline: 1px solid red;
-  width: 1570px;
-  margin-bottom: 93px;
+  /* width: 1600px; */
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 93px;
   /* margin-left: auto;
   margin-right: auto;*/
   text-align: center;
@@ -203,7 +238,7 @@ body {
 /* noname============================ */
 .noname {
   outline: 1px solid red;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   /* width: 1200px; */
   padding-left: 15px;
   padding-right: 15px;
@@ -215,7 +250,9 @@ body {
   background-color: var(--secondary-body-color);
   border-radius: 4px;
 }
-/* .noname-menu{} */
+.noname-menu {
+  display: flex;
+}
 /* .noname-item{} */
 .noname-title {
   margin-bottom: 10px;
@@ -234,9 +271,10 @@ body {
   padding-right: 15px;
 }
 .works-title {
-  padding: 94px 612px 50px 612px;
-
+  padding-top: 94px;
   margin-bottom: 50px;
+  text-align: center;
+  /* margin-bottom: 50px; */
   color: var(--main-color);
   font-size: 36px;
   line-height: 1.16;
@@ -255,7 +293,10 @@ body {
   background-color: var(--secondary-body-color);
 }
 .team-title {
-  padding: 94px 668px 50px 668px;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  text-align: center;
   color: var(--main-color);
   font-size: 36px;
   line-height: 1.16;
@@ -291,20 +332,25 @@ body {
   padding-right: 15px;
 }
 .clientage-header {
-  padding: 94px 605px 50px 605px;
+  padding-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
   color: var(--main-color);
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: inherit;
 }
-/* .clientage-list{} */
+.clientage-list > li {
+  display: inline-block;
+  padding: 10px 10px;
+}
 /* .clientage-icon{} */
 /* .clients-list{}*/
 
 /* footer===================== */
 .footer {
   outline: 1px solid red;
-  width: 1570px;
+  /* width: 1600px; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -376,7 +422,14 @@ body {
 /* portfolio ==============================*/
 /* main */
 /* sentence */
+
+.main-sentence {
+  display: flex;
+  justify-content: center;
+}
 .main-sentence .button {
+  outline: 1px solid red;
+
   background-color: var(--secondary-body-color);
   color: var(--main-color);
   border: 1px solid transparent;
@@ -397,7 +450,9 @@ body {
   line-height: 1.62;
   letter-spacing: inherit;
 }
-/* .main-item{} */
+.main-item {
+  outline: 1px solid red;
+}
 /* .main-menu{} */
 .main-heading {
   color: var(--main-color);
