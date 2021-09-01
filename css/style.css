@@ -88,7 +88,6 @@ body {
 
 /* page ===================== */
 .page {
-  outline: 1px solid red;
   width: 1600px;
   margin: 0 auto;
   padding-left: 15px;
@@ -99,7 +98,7 @@ body {
 }
 /* page-header============================= */
 .page-header {
-  outline: 1px solid red;
+  border-bottom: 1px solid #ececec;
   /* width: 1200px; */
   padding-left: 15px;
   padding-right: 15px;
@@ -190,7 +189,7 @@ body {
 .container {
   width: 1200px;
   /* background-color: aqua; */
-  outline: 1px solid black;
+
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -204,15 +203,15 @@ body {
   /* width: 1600px; */
   padding-right: 15px;
   padding-left: 15px;
-  margin-bottom: 93px;
+  padding-top: 200px;
+  padding-bottom: 280px;
   /* margin-left: auto;
   margin-right: auto;*/
   text-align: center;
 }
 
 .hero-title {
-  outline: 1px solid red;
-  padding-top: 200px;
+  /* padding-top: 200px; */
   margin-top: 0;
   margin-bottom: 30px;
   min-width: 696px;
@@ -242,9 +241,8 @@ body {
 
 /* noname============================ */
 .noname {
-  outline: 1px solid red;
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   /* width: 1200px; */
   padding-left: 15px;
   padding-right: 15px;
@@ -290,13 +288,14 @@ body {
 
 /* works========================== */
 .works {
-  outline: 1px solid red;
   /* width: 1200px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
 }
 .works-title {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   margin-bottom: 50px;
   text-align: center;
   /* margin-bottom: 50px; */
@@ -334,15 +333,16 @@ body {
 
 /* team ========================*/
 .team {
-  outline: 1px solid red;
   /* width: 1200px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
   background-color: var(--secondary-body-color);
 }
 
 .team-title {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   margin-bottom: 50px;
 
   text-align: center;
@@ -399,13 +399,14 @@ body {
 
 /* clientage===================== */
 .clientage {
-  outline: 1px solid red;
   /* width: 1200px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
 }
 .clientage-header {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   margin-bottom: 50px;
   text-align: center;
   color: var(--main-color);
@@ -423,7 +424,7 @@ body {
 .clientage-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .clientage-icon {
@@ -452,7 +453,7 @@ body {
 /* footer===================== */
 .footer {
   background-color: var(--blackout-color);
-  outline: 1px solid red;
+
   /* width: 1600px; */
   /* padding-left: 15px;
   padding-right: 15px; */
@@ -460,7 +461,8 @@ body {
 
 .end {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: baseline;
 }
 
 .footer-item .logo {
@@ -477,8 +479,10 @@ body {
   letter-spacing: 0.03em;
 }
 .footer-item {
-  outline: 1px solid red;
   padding-top: 60px;
+  padding-bottom: 60px;
+  width: auto;
+  margin-right: 90px;
 }
 
 .footer-link {
@@ -487,6 +491,7 @@ body {
 /* .footer-address{} */
 .footer-social {
   padding-top: 72px;
+  margin-right: auto;
 
   color: var(--body-color);
 }
@@ -495,10 +500,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.142;
-  letter-spacing: 0.03em;
   letter-spacing: inherit;
 }
-/* .footer-list{} */
+
 .footer-street a {
   color: var(--body-color);
   font-family: "Roboto", sans-serif;
@@ -548,19 +552,29 @@ body {
 
 /* footer */
 .footer-subscribe > p {
+  padding-top: 72px;
+  padding-bottom: 164px;
+  margin-left: 0;
+  margin-right: 151px;
   color: var(--body-color);
 
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.142;
-  letter-spacing: 0.03em;
   letter-spacing: inherit;
 }
 .footer-subscribe {
   display: flex;
-  outline: 1px solid red;
+
+  /* padding-top: 108px;
+  padding-bottom: 94px; */
+
+  align-items: flex-start;
+}
+
+.button-corection {
   padding-top: 108px;
-  padding-bottom: 94px;
+  /* отступ кнопки футера сверху */
 }
 .footer-button {
   display: inline-block;
@@ -593,8 +607,8 @@ body {
 /* sentence */
 
 .main {
-  margin-top: 93px;
-  margin-bottom: 94px;
+  padding-top: 93px;
+  padding-bottom: 94px;
 }
 .main-sentence {
   display: flex;
@@ -611,7 +625,6 @@ body {
   /* кроме последнего с маржином 0 */
 }
 .main-sentence .button {
-  /* outline: 1px solid red; */
   background-color: var(--secondary-body-color);
   color: var(--main-color);
 
@@ -645,7 +658,6 @@ body {
 }
 
 .main-item {
-  outline: 1px solid red;
   width: calc((100% - 60px) / 3);
   /* width: 370px */
   /* задаем ширину одного элем.ЛИ  */
@@ -673,9 +685,9 @@ body {
 }
 
 .main-div {
-  outline: 1px solid red;
   padding-right: 24px;
   padding-left: 24px;
+  border: 1px solid #eeeeee;
 }
 
 .main-heading {
